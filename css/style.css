@@ -320,9 +320,9 @@ background-image: url(../images/heading-bg-lg.png);
 }
 
 .inbound .button {
-    margin-top: 29px;
+    /*margin-top: 29px;*/
     display:  block;
-    width: 80%;
+    /*width: 40%;*/
 }
 
 .inboundP p{
@@ -530,6 +530,11 @@ background-image: url(../images/heading-bg-lg.png);
 	border-left: 9px solid #0372BA;
 }
 
+.measure .button {
+    background-color:  transparent;
+    color:  #337ab7;
+}
+
 /*************dtp*******************/
 
 .dtp{
@@ -551,6 +556,8 @@ background-image: url(../images/heading-bg-lg.png);
     position: relative;
 }
 
+
+
 .dtpTitle::after{
 	content: "";
 	width: 0;
@@ -566,6 +573,30 @@ background-image: url(../images/heading-bg-lg.png);
 	transform: translateX(-50%);
 
 }
+
+@media (max-width: 480px){
+	.dtpTitle{
+		width: 260px;
+	}	
+}
+/*
+@media (min-width: 481px) and (max-width: 767px){
+	.dtpTitle{
+		width: 400px;
+	}		
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+	.dtpTitle{
+		width: 400px;;
+	}		
+}
+
+@media (min-width: 1024px){
+	.dtpTitle{
+		width: 400px;
+	}	
+}*/
 
 .dtpBelow{
     clear: both;
