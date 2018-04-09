@@ -102,16 +102,25 @@ nav.navbar.navbar-default a{
 	/*border: 1px solid black;*/
 	position: relative;
 }
+.bannerBottomServiceText .button {
+    font-size: 12px;
+}
 
-@media (max-width: 767px){
+@media (min-width: 768px) and (max-width: 1043px){
+	.bannerBottomService{
+		width: 33%;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px){
 	.bannerBottomService{
 		width: 50%;
 	}
 }
 
-@media (max-width: 460px){
+@media (max-width: 479px){
 	.bannerBottomService{
-		width: 100%;
+		width: 50%;
 	}
 }
 
@@ -140,6 +149,50 @@ nav.navbar.navbar-default a{
 	color: white;
 	font-weight: 700;
 	position: relative;
+}
+
+@media (max-width: 479px){
+	.button{
+		padding: 4px 25px 4px 7px;
+		background-color: #0372ba;
+		border-radius: 10px;
+		color: white;
+		font-weight: 700;
+		position: relative;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+	.button{
+		padding: 4px 25px 4px 7px;
+		background-color: #0372ba;
+		border-radius: 10px;
+		color: white;
+		font-weight: 700;
+		position: relative;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+	.button{
+		padding: 4px 25px 4px 7px;
+		background-color: #0372ba;
+		border-radius: 10px;
+		color: white;
+		font-weight: 700;
+		position: relative;
+	}
+}
+
+@media (min-width: 1024px){
+	.button{
+		padding: 4px 25px 4px 7px;
+		background-color: #0372ba;
+		border-radius: 10px;
+		color: white;
+		font-weight: 700;
+		position: relative;
+	}
 }
 
 .rightArrow{
@@ -174,13 +227,13 @@ nav.navbar.navbar-default a{
 }
 
 
-@media (max-width: 460px){
+@media (max-width: 480px){
 	.dot{
 		width: 12%;
 	}	
 }
 
-@media (min-width: 461px) and (max-width: 767px){
+@media (min-width: 481px) and (max-width: 767px){
 	.dot{
 		width: 10%;
 	}	
@@ -273,30 +326,36 @@ background-image: url(../images/heading-bg-lg.png);
 		padding-bottom: 15px;
 }
 .woman{
+/*	background-image: url(../images/inq-girl.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;*/
+
 	border-bottom: 10px solid gray;
 	position: relative;
 
 }
 
-.woman img{
-	width: 100%;
+.woman .womanImage{
+	width: auto;
+	height: 250px;
 }
 
-.woman > p {
+/*.woman > p {
 	position: absolute;
 	top: 80px;
 	left: 50%;
 	transform: translateX(-50%);
-	}
+	}*/
 
 .circleBar{
 	width: 707px;
 	position: absolute;
 	top: 101px;
 	right: 0;
-	/*left: 35%;*/
-	/*border: 1px solid red;*/
 }
+
+
 
 .circleBar1 { 
 	display: inline-block;
@@ -315,6 +374,21 @@ background-image: url(../images/heading-bg-lg.png);
 	/*border: 1px solid red;*/
 }
 
+@media (max-width: 767px){
+	
+	.circleBar > p {
+	}
+
+	.circleBar{
+		top: 30px;
+		width: 400px;
+	}
+
+	.circleBar2 { 
+		margin-left: 0px;
+		/*border: 1px solid red;*/
+	}
+}
 
 .price-list{
 	padding: 10px 50px;
