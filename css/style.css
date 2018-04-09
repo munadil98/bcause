@@ -163,14 +163,33 @@ nav.navbar.navbar-default a{
 	position: relative;
 }
 
+.rightArrow{
+	position: absolute;
+	top: 3px;
+	right: 0px;
+
+	width: 0;
+	height: 0;
+
+	border-top: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+	border-left: 9px solid white;
+}
+
+
 @media (max-width: 479px){
 	.button{
-		padding: 4px 25px 4px 7px;
+		padding: 4px 12px 4px 5px;
 		background-color: #0372ba;
 		border-radius: 10px;
 		color: white;
 		font-weight: 700;
 		position: relative;
+	}
+
+	.rightArrow{
+		right: -9px;
 	}
 }
 
@@ -207,19 +226,7 @@ nav.navbar.navbar-default a{
 	}
 }
 
-.rightArrow{
-	position: absolute;
-	top: 3px;
-	right: 0px;
 
-	width: 0;
-	height: 0;
-
-	border-top: 9px solid transparent;
-	border-right: 9px solid transparent;
-	border-bottom: 9px solid transparent;
-	border-left: 9px solid white;
-}
 
 /*inboud*/
 /*===============*/
