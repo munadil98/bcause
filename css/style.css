@@ -7,9 +7,21 @@ body{
 
 }
 
-@font-face {
 
 
+@media (min-width: 768px) and (max-width: 1043px){
+	h2{ font-size: 25px; }
+	h3{ font-size: 23px; }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+	h2{ font-size: 20px; }
+	h2{ font-size: 18px; }
+}
+
+@media (max-width: 479px){
+	h2{ font-size: 18px; }
+	h2{ font-size: 26px; }
 }
 
 .brd{
@@ -229,25 +241,25 @@ nav.navbar.navbar-default a{
 
 @media (max-width: 480px){
 	.dot{
-		width: 12%;
+		width: 22%;
 	}	
 }
 
 @media (min-width: 481px) and (max-width: 767px){
 	.dot{
-		width: 10%;
+		width: 15%;
 	}	
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
 	.dot{
-		width: 8%;
+		width: 11%;
 	}	
 }
 
 @media (min-width: 1024px){
 	.dot{
-		width: 6%;
+		width: 8%;
 	}	
 }
 
@@ -303,7 +315,7 @@ background-image: url(../images/heading-bg-lg.png);
 .inbound .button {
     margin-top: 29px;
     display:  block;
-    width: 50%;
+    width: 80%;
 }
 
 .inboundP p{
@@ -337,22 +349,18 @@ background-image: url(../images/heading-bg-lg.png);
 }
 
 .woman .womanImage{
-	width: auto;
-	height: 250px;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
 }
 
-/*.woman > p {
-	position: absolute;
-	top: 80px;
-	left: 50%;
-	transform: translateX(-50%);
-	}*/
 
 .circleBar{
 	width: 707px;
 	position: absolute;
-	top: 101px;
+	top: 200px;
 	right: 0;
+	margin-right: 50px;
 }
 
 
@@ -363,9 +371,11 @@ background-image: url(../images/heading-bg-lg.png);
 	/*border: 1px solid red;*/
 }
 
-.circleBar1 img{
-
+.circleBar1 img,
+.circleBar2 img {
+    width: 30%;
 }
+
 
 .circleBar2 { 
 	display: inline-block;
@@ -375,18 +385,20 @@ background-image: url(../images/heading-bg-lg.png);
 }
 
 @media (max-width: 767px){
-	
-	.circleBar > p {
-	}
 
 	.circleBar{
 		top: 30px;
-		width: 400px;
+		width: 250px;
+	}
+
+	.circleBar1 { 
+		width: 250px;
+		margin-left: 0px;
 	}
 
 	.circleBar2 { 
+		width: 250px;
 		margin-left: 0px;
-		/*border: 1px solid red;*/
 	}
 }
 
@@ -403,13 +415,37 @@ background-image: url(../images/heading-bg-lg.png);
 	text-align: center;
 }
 
-/*strength*/
-/*==================*/
+/**********************strength****************/
+/*=============================================*/
 
 .circle{
 	display: inline-block;
 	width: 19%;
 	text-align: center;
+}
+
+@media (max-width: 480px){
+	.circle{
+		width: 100%;
+	}	
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+	.circle{
+		width: 48%;
+	}	
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+	.circle{
+		width: 30%;
+	}	
+}
+
+@media (min-width: 1024px){
+	.circle{
+		width: 19%;
+	}	
 }
 
 .circle img{
@@ -533,6 +569,10 @@ background-image: url(../images/heading-bg-lg.png);
     margin-top: 40px;
 }
 
+.dtpBox div{
+	margin-bottom: 10px;
+}
+
 .dtpBox img {
     width: 100%;
     box-shadow: 3px 3px 4px 0 #999;
@@ -573,43 +613,66 @@ background-image: url(../images/heading-bg-lg.png);
 	/*border: 1px solid #D2D2D2;*/
 	clear: both;
 }
-.letterA{
-	position: relative;
-	border-radius: 10px;
-}
 
-.letterQ{
-	position: relative;
-	border-radius: 10px;
-}
-
-.letterA,
-.letterQ{
-	margin-left: 1px;
-	left: -17px;
-	display: inline-block;
-	padding: 3px 10px;
-
-}
-
-.letterA{
-	background-color: #0372BA;
-}
-.letterQ{
-	background-color: #536277;	
-}
 
 .letterCircleQ{
 	padding: 15px;
 	border-radius: 50%;
 	background-color: #536277;
+
 }
 
 .letterCircleA{
 	padding: 15px;
 	border-radius: 50%;
 	background-color: #0372BA;
+
+	
 }
+
+.letterA{
+	position: relative;
+	border-radius: 10px;
+	background-color: #0372BA;
+
+}
+
+.letterQ{
+	position: relative;
+	border-radius: 10px;
+	background-color: #536277;
+}
+
+.barRightToCircle{
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.letterA,
+.letterQ{
+	position: absolute;
+
+	margin-left: 1px;
+	/*left: -17px;*/
+	left: 30px;
+	display: inline-block;
+	padding: 3px 10px;
+	width: 100%;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+}
+
+/*.letterA{
+	background-color: #0372BA;
+}
+.letterQ{
+	background-color: #536277;	
+}*/
+
+
 
 /***********************boxed services**************************/
 .boxedService{
@@ -626,6 +689,7 @@ background-image: url(../images/heading-bg-lg.png);
 	color: white;
 	padding: 20px;
 	width: 100%;
+	margin-bottom: 10px;
 	/*border: 1px solid red;*/
 }
 
@@ -682,7 +746,9 @@ background-image: url(../images/heading-bg-lg.png);
 	width: 90%;
 	margin: 0 auto;
 	padding: 20px 0;
+	overflow: auto;
 }
+
 
 .footerMain .footerLogo{
 	padding-top: 30%;
@@ -712,6 +778,12 @@ background-image: url(../images/heading-bg-lg.png);
 	border-radius: 5px;
 	box-shadow: 5px 5px #000;
 	font-weight: 900;
+}
+
+@media (max-width: 479px){
+	.aButton{
+		margin-bottom: 10px;
+	}
 }
 
 .copyright p{
