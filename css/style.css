@@ -20,10 +20,15 @@ p{
 	text-align: center;
 }
 
+/*nav.navbar.navbar-default {
+    
+}*/
 nav.navbar.navbar-default {
-    background-color:  transparent;
+	background-color:  #000;
+    border-bottom:  transparent;
+    opacity:  .5;
+    /*color: white;*/
 }
-
 nav.navbar.navbar-default a{
 	color: white;
 }
@@ -62,6 +67,12 @@ nav.navbar.navbar-default a{
 	font-weight: 900;
 }
 
+@media (max-width: 767px){
+	.grayBox{
+		width: 58%;
+	}
+}
+
 .timing{
 	/*width: 50%;*/
 	border: 5px solid #838383;
@@ -74,7 +85,7 @@ nav.navbar.navbar-default a{
 }
 
 
-/*Services*/
+/*************************Services*************************88*/
 
 .services{
 	background-color: #fff;
@@ -87,11 +98,21 @@ nav.navbar.navbar-default a{
 	display: inline-block;
 	background-color: #fff;
 	width: 20%;
-	/*padding: 10px;*/
 	margin: 0 -2px;
 	/*border: 1px solid black;*/
 	position: relative;
+}
 
+@media (max-width: 767px){
+	.bannerBottomService{
+		width: 50%;
+	}
+}
+
+@media (max-width: 460px){
+	.bannerBottomService{
+		width: 100%;
+	}
 }
 
 .bannerBottomServiceText{
@@ -142,11 +163,39 @@ nav.navbar.navbar-default a{
 	background-color: #F2F2F2;
 	padding: 20px 0;
 }
-.dot{
+
+.dot {
 	position: relative;
 	color: #575757;
 	text-align: center;
-	/*border: 1px solid red;*/
+
+    width: 10%;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 460px){
+	.dot{
+		width: 12%;
+	}	
+}
+
+@media (min-width: 461px) and (max-width: 767px){
+	.dot{
+		width: 10%;
+	}	
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+	.dot{
+		width: 8%;
+	}	
+}
+
+@media (min-width: 1024px){
+	.dot{
+		width: 6%;
+	}	
 }
 
 .dot::before{
@@ -157,7 +206,8 @@ nav.navbar.navbar-default a{
 	background-color: #575757;
 
 	position: absolute;
-	left: 47%;
+	/*left: 47%;*/
+	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
 
@@ -171,11 +221,13 @@ nav.navbar.navbar-default a{
 	background-color: #575757;
 
 	position: absolute;
-	right: 47%;
+	/*right: 47%;*/
+	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
 
 }
+
 
 .inboudText{
 
@@ -226,6 +278,10 @@ background-image: url(../images/heading-bg-lg.png);
 
 }
 
+.woman img{
+	width: 100%;
+}
+
 .woman > p {
 	position: absolute;
 	top: 80px;
@@ -237,7 +293,8 @@ background-image: url(../images/heading-bg-lg.png);
 	width: 707px;
 	position: absolute;
 	top: 101px;
-	left: 35%;
+	right: 0;
+	/*left: 35%;*/
 	/*border: 1px solid red;*/
 }
 
@@ -281,6 +338,9 @@ background-image: url(../images/heading-bg-lg.png);
 	text-align: center;
 }
 
+.circle img{
+	width: 100%;
+}
 .circle p{
 	/*text-align: center;*/
 }
