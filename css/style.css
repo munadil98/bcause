@@ -180,7 +180,7 @@ nav.navbar.navbar-default a{
 
 @media (max-width: 479px){
 	.button{
-		padding: 4px 12px 4px 5px;
+		padding: 4px 8px 4px 5px;
 		background-color: #0372ba;
 		border-radius: 10px;
 		color: white;
