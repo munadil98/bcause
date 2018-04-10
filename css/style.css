@@ -340,14 +340,14 @@ background-image: url(../images/heading-bg-lg.png);
 
 @media (min-width: 480px) and (max-width: 767px){
 	.inbound .button {
-		width: 25%;
+		width: 35%;
 
 	}
 }
 
 @media (max-width: 479px){
 	.inbound .button {
-		width: 60%;
+		width: 30%;
 	}
 }
 
